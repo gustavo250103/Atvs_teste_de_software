@@ -4,11 +4,11 @@ Exercício 2 – Grafo de fluxo de controle, V(G) e caminhos independentes.
 Grafo (Mermaid):
 ```mermaid
 flowchart TD
-    A([Início]) --> B{x > 100?}
-    B -->|Sim| C[return "Alto"]
-    B -->|Não| D{x > 50?}
-    D -->|Sim| E[return "Medio"]
-    D -->|Não| F[return "Baixo"]
+    A([Inicio]) --> B{x > 100?}
+    B -->|Sim| C["Alto"]
+    B -->|Nao| D{x > 50?}
+    D -->|Sim| E["Medio"]
+    D -->|Nao| F["Baixo"]
 ```
 
 Complexidade ciclomática V(G):

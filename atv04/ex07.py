@@ -4,14 +4,14 @@ Exercício 7 – Def/Use, GFC e du-pairs.
 Grafo (Mermaid):
 ```mermaid
 flowchart TD
-    A([Início]) --> B[total = preco]
+    A([Inicio]) --> B[total = preco]
     B --> C{cliente_vip?}
     C -->|Sim| D[desconto = preco * 0.2]
     D --> E[total = preco - desconto]
-    C -->|Não| E
+    C -->|Nao| E
     E --> F{total < 50?}
     F -->|Sim| G[total = 50]
-    F -->|Não| H[return total]
+    F -->|Nao| H[return total]
     G --> H
 ```
 

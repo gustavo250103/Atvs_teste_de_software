@@ -4,13 +4,13 @@ Exercício 1 – Grafo de fluxo de controle, complexidade ciclomática e caminho
 Grafo (Mermaid):
 ```mermaid
 flowchart TD
-    A([Início]) --> B{n > 0?}
+    A([Inicio]) --> B{n > 0?}
     B -->|Sim| C{n % 2 == 0?}
-    C -->|Sim| D[return "Par positivo"]
-    C -->|Não| E[return "Impar positivo"]
-    B -->|Não| F{n < 0?}
-    F -->|Sim| G[return "Negativo"]
-    F -->|Não| H[return "Zero"]
+    C -->|Sim| D[\"Par positivo\"]
+    C -->|Nao| E[\"Impar positivo\"]
+    B -->|Nao| F{n < 0?}
+    F -->|Sim| G[\"Negativo\"]
+    F -->|Nao| H[\"Zero\"]
 ```
 
 Complexidade ciclomática:

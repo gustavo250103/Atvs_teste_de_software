@@ -4,11 +4,11 @@ Exercício 3 – Grafo de fluxo de controle, V(G) e caminhos independentes.
 Grafo (Mermaid):
 ```mermaid
 flowchart TD
-    A([Início]) --> B{idade >= 18?}
+    A([Inicio]) --> B{idade >= 18?}
     B -->|Sim| C{membro?}
-    C -->|Sim| D[return "Permitido"]
-    C -->|Não| E[return "Negado"]
-    B -->|Não| E
+    C -->|Sim| D["Permitido"]
+    C -->|Nao| E["Negado"]
+    B -->|Nao| E
 ```
 
 Complexidade ciclomática V(G):

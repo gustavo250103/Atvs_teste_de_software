@@ -4,19 +4,19 @@ Exercício 6 – Grafo de fluxo de controle, V(G) e caminhos independentes.
 Grafo (Mermaid):
 ```mermaid
 flowchart TD
-    A([Início]) --> B[total = 0]
-    B --> C{próximo n em numeros?}
-    C -->|Não| J[return "Abaixo"]
+    A([Inicio]) --> B[total = 0]
+    B --> C{proximo n em numeros?}
+    C -->|Nao| J["Abaixo"]
     C -->|Sim| D{n > 0 and n % 2 == 0?}
     D -->|Sim| E[total += n]
-    D -->|Não| F{n < 0?}
+    D -->|Nao| F{n < 0?}
     F -->|Sim| G[total -= 1]
-    F -->|Não| H[continue]
+    F -->|Nao| H[continue]
     E --> I{total > 10?}
     G --> I
     H --> C
-    I -->|Sim| K[return "Acima"]
-    I -->|Não| C
+    I -->|Sim| K["Acima"]
+    I -->|Nao| C
 ```
 
 Complexidade ciclomática V(G):
