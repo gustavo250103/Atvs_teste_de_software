@@ -79,7 +79,7 @@ def cpfs_invalidos():
     ]
 
 
-# Testes solicitados (cada teste tem breve explicação em português)
+# Testes de validação
 
 def test_cpf_valido_padrao(cpfs_validos):
     """CPF válido padrão: valida que o CPF conhecido é considerado válido."""
