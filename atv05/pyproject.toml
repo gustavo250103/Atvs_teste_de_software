@@ -1,0 +1,8 @@
+[tool.mutmut]
+# Alvo de mutação: somente a calculadora
+paths_to_mutate = ["calculadora.py"]
+# Diretório de testes (raiz atual)
+tests_dir = "."
+# Comando para rodar os testes
+runner = "python -m pytest -q"
+

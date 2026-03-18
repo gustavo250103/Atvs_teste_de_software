@@ -19,9 +19,13 @@ lib64/
 parts/
 sdist/
 var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -34,16 +38,22 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 # Unit test / coverage reports
-.tox/
-*.cover
-*.coverage
-.coverage.*
-coverage.xml
 htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
 .pytest_cache/
 
 # Translations
 *.mo
+*.pot
 
 # Django stuff:
 *.log
@@ -75,24 +85,56 @@ ipython_config.py
 .python-version
 
 # pipenv
-Pipfile.lock
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
 
-# mypy
-.mypy_cache/
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
 
-# virtualenv
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
 venv/
 ENV/
-env/
 env.bak/
 venv.bak/
 
-# VS Code
-.vscode/
+# Spyder project settings
+.spyderproject
+.spyproject
 
-# OS files
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
 Thumbs.db
-
-# mutation testing cache/output
-mutants/
