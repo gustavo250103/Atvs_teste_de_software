@@ -134,10 +134,4 @@ test_estoque.py::test_listar_produtos_em_estoque_vazio_retorna_lista_vazia PASSE
 test_estoque.py::test_produto_mais_estocado_retorna_nome_com_maior_quantidade PASSED
 test_estoque.py::test_produto_mais_estocado_em_estoque_vazio_retorna_none PASSED
 ```
-
-## O que pode ser destacado na apresentacao
-- O projeto usa TDD de forma explicita e rastreavel.
-- As regras de negocio estao cobertas por testes normais e de erro.
-- A implementacao foi mantida simples, legivel e facil de manter.
-- O codigo esta comentado de forma suficiente para explicar a ideia sem poluir a
-  leitura.
+  
