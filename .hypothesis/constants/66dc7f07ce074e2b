@@ -1,0 +1,4 @@
+# file: C:\Users\51069303\Atvs_teste_de_software\Atvs_teste_de_software_integracao-root\atv02\cpf.py
+# hypothesis_version: 6.151.9
+
+['CPF inválido', '\\D', 'formatar_cpf', 'validar_cpf']
